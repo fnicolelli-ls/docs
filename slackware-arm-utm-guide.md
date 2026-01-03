@@ -396,9 +396,6 @@ zcat /proc/config.gz | grep CFS_BANDWIDTH
 ```bash
 # Start from the working config
 cd /usr/src/linux
-cp /boot/config-armv8-6.12.62 .config
-make oldconfig
-
 # Enable specific options
 make menuconfig
 # Navigate to: General setup → CPU/Task time and stats accounting
@@ -408,8 +405,9 @@ make menuconfig
 make -j8
 
 # Install
-sudo cp arch/arm64/boot/Image /boot/Image-armv8-6.12.62-custom
-sudo ln -sf Image-armv8-6.12.62-custom /boot/Image-armv8
+make modules_install #this step is only needed if modules changed
+make install
+sudo ln -sf /boot/vmlinuz-*version*-arm8 /boot/Image-armv8 # where version is your new kernel version i.e 6.12.63
 ```
 
 **Note**: On ARM, don't use `grub-mkconfig` as it is not supported.
