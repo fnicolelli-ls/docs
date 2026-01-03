@@ -122,11 +122,12 @@ cat /etc/hardwareclock
 
 ### Disable vim Backup Files
 
+One thing that i found annoying is that vim creates backup files by default (usually is disabled).
+To disable this behavior, add the following lines in `/usr/share/vim/vimrc` to disable it globally:
+
 ```bash
-# Add to ~/.vimrc
 set nobackup
 set nowritebackup
-set noswapfile
 ```
 
 ---
