@@ -1,7 +1,7 @@
 # Slackware ARM in UTM: A Comprehensive Setup Guide
 
 A practical guide to running ARM Slackware Linux as a development environment on Apple Silicon Macs using UTM.
-This guide covers installation, configuration, containerization (Docker/kind), VPN connectivity, and AWS/Kubernetes integration.
+This guide covers installation, configuration, containerization (Docker/kind) and AWS/Kubernetes integration.
 
 ---
 
