@@ -642,15 +642,6 @@ alias k='kubectl'
 alias s='switch'
 ```
 
-### Go Build Issues
-
-If Go builds fail with linker errors (missing gold linker):
-
-```bash
-# Use static builds
-CGO_ENABLED=0 go install github.com/example/tool@latest
-```
-
 ### Understanding zram
 
 Slackware may enable zram (compressed RAM swap):
