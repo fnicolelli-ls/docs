@@ -7,7 +7,7 @@ This guide covers installation, configuration, containerization (Docker/kind), V
 
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
+1. [Hardware Prerequisites](#hardware-prerequisites)
 2. [Initial VM Setup](#initial-vm-setup)
 3. [Post-Installation Configuration](#post-installation-configuration)
 4. [Shared Folders](#shared-folders)
