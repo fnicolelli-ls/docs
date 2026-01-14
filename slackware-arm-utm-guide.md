@@ -39,8 +39,7 @@ This guide covers installation, configuration, containerization (Docker/kind) an
 UTM supports two backends, each with trade-offs:
 
 | Feature | Apple Virtualization (VZ) | QEMU |
-|---------|---------------------------|------|
-
+| --------- | --------------------------- | ------ |
 | Performance | Faster, native | Slightly slower |
 | USB Passthrough | Limited | Full support |
 | Guest Agent | Not supported | Supported |
